@@ -41,6 +41,13 @@ h1 {
   margin-bottom: 1em;
 }
 
+p {
+  margin-top: 1.5em;
+}
+p:first-child {
+  margin-top: 0;
+}
+
 input[type="text"], 
 input[type="password"] {
   padding: 5px;
@@ -145,9 +152,10 @@ nav ul {
   }
     nav ul li a {
       background: #ddd;
+      border-radius: 8px 8px 0 0;
       display: inline-block;
-      line-height: 50px;
-      margin: 0;
+      line-height: 40px;
+      margin-top: 10px;
       padding: 0 20px;
     }
     nav ul li a.current {
@@ -160,5 +168,10 @@ nav ul {
 
 #main-content {
   clear: both;
-  padding: 15px 20px;
+  padding: 20px;
+}
+
+p.question {
+  font-style: italic;
+  margin-bottom: 0.5em;
 }
