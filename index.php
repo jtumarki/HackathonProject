@@ -9,10 +9,11 @@
   </head>
   <body class="index">
     
-    <form id="login-form">
+    <div class="title">SisterMatch</div>
+    <form id="login-form" class="form-box">
       <input type="text" name="username" placeholder="Username" />
       <input type="password" name="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
+      <input type="submit" value="Log In" /> or <a href="register.php">Register</a>
       
       <br /><br /><a href="home.php">Click here to skip logging in</a>
     </form>

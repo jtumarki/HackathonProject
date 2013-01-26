@@ -12,20 +12,42 @@ body.index {
   background: #bd4a57;
 }
 
-a, a:visited {
-  color: #81835c;
+div, form, 
+input[type="text"], 
+input[type="password"] {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
   text-decoration: none;
 }
-a:hover {
+a:not(.title), a:not(.title):visited {
+  color: #81835c;
+  
+}
+a:not(.title):hover {
   color: #aeb37e;
 }
-a:active {
+a:not(.title):active {
   text-decoration: underline;
 }
 
 h1 {
   color: #666;
   font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+input[type="text"], 
+input[type="password"] {
+  padding: 5px;
+}
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 5px 8px;
 }
 
 /* Clearfix from HTML5 Boiler Plate
@@ -45,23 +67,54 @@ h1 {
 }
 
 /*========================================
-  LOGIN FORM
+  LOGIN/REGISTER FORM
   ========================================*/
 
-#login-form {
+.title {
+  color: #fff;
+  font-family: 'Georgia', serif;
+  line-height: 50px;
+}
+
+body.index .title {
+  font-size: 2.2em;
+  line-height: normal;
+  margin: 15% auto 0 auto;
+  width: 350px;
+}
+
+.form-box {
   background: #fff;
   border-radius: 15px;
   display: block;
-  margin: 15% auto 0 auto;
+  margin: 50px auto;
   padding: 30px;
-  width: 300px;
 }
-#login-form input[type="text"], 
-#login-form input[type="password"] {
-  display: block;
-  margin-bottom: 15px;
-  width: 98%;
+
+#login-form {
+  margin-top: 15px;
+  width: 350px;
 }
+  #login-form input[type="text"], 
+  #login-form input[type="password"] {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+#register-form {
+  width: 450px;
+}
+  #register-form label {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 40%;
+  }
+  #register-form input[type="text"],
+  #register-form input[type="password"],
+  #register-form select {
+    width: 57%;
+  }
 
 /*========================================
   HEADER
@@ -73,11 +126,9 @@ header {
   padding: 0 20px;
 }
 
-#title {
-  color: #fff;
+header .title {
   display: inline-block;
   float: left;
-  font-family: 'Georgia', serif;
   font-size: 1.8em;
   line-height: 50px;
 }
