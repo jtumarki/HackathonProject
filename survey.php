@@ -2,10 +2,14 @@
 <!-- BEGIN PAGE CONTENT -->
 
 <form action="">
-  <p>What is your favorite color?</p>
-  <input type="radio" name="color" value="red" /> Red<br />
-  <input type="radio" name="color" value="green" /> Green<br />
-  <input type="radio" name="color" value="blue" /> Blue<br />
+  <p>I see myself as someone who ...</p>
+  
+  <p1>is talkative<\p1>
+  <input type="radio" name="ptype1" value="1" /> Stongly Agree 1<br />
+  <input type="radio" name="ptype1" value="2" /> 2<br />
+  <input type="radio" name="ptype1" value="3" /> 3<br />
+    <input type="radio" name="ptype1" value="4" /> 4<br />
+	  <input type="radio" name="ptype1" value="5" /> 5 Strongly Disagree<br />
   
   <p>List your interests, separated by commas.</p>
   <textarea name="interests" placeholder="Example: music, violin, Ellie Goulding"></textarea>
