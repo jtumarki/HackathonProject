@@ -10,7 +10,7 @@
   <body>
     
     <header class="clearfix">
-      <span id="title">SisterMatch</span>
+      <a id="title" href="home.php">SisterMatch</a>
       <?php include 'navigation.php' ?>
     </header>
     
