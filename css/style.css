@@ -43,6 +43,10 @@ h1:first-child {
   margin-top: 0;
 }
 
+h2 {
+  font-size: 1em;
+}
+
 p {
   margin-top: 1.5em;
 }
@@ -264,3 +268,46 @@ p.question {
   font-style: italic;
   margin-bottom: 0.5em;
 }
+
+/* Matches */
+ol {
+  padding-left: 20px;
+}
+
+.match {
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+  .match img {
+    border: 1px solid #222;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 64px;
+  }
+  .match .info {
+    display: inline-block;
+    margin-top: 8px;
+    vertical-align: top;
+  }
+    .match .info h1 {
+      margin-bottom: 3px;
+    }
+  .match .interests {
+    clear: both;
+    font-size: 0.9em;
+  }
+    .match .interests ul {
+      padding: 0;
+    }
+    .match .tag {
+      background: #aeb37e;
+      border-radius: 6px;
+      color: #fff;
+      display: inline-block;
+      list-style: none;
+      margin: 0 8px 0 0;
+      padding: 3px 6px;
+    }
+    .match .tag:hover {
+      background: #81835c;
+    }
