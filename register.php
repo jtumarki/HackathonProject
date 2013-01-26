@@ -13,14 +13,11 @@
     <form id="register-form" class="form-box">
       <h1>Register for SisterMatch</h1>
       
-      <label>Username</label>
+      <label>E-mail Address</label>
       <input type="text" />
       
       <label>Password</label>
-      <input type="password" />
-      
-      <label>E-mail</label>
-      <input type="text" />
+      <input type="password" />      
       
       <label>Real Name</label>
       <input type="text" />

@@ -12,7 +12,7 @@
     
     <div class="title">SisterMatch</div>
     <form id="login-form" class="form-box">
-      <input type="text" name="username" placeholder="Username" />
+      <input type="text" name="email" placeholder="E-mail Address" />
       <input type="password" name="password" placeholder="Password" />
       <input type="submit" value="Log In" /> or <a href="register.php">Register</a>
       

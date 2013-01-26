@@ -37,8 +37,10 @@ a:not(.title):active {
 h1 {
   color: #666;
   font-size: 1.2em;
-  margin: 0;
-  margin-bottom: 1em;
+  margin: 1.5em 0 1em 0;
+}
+h1:first-child {
+  margin-top: 0;
 }
 
 p {
@@ -61,7 +63,7 @@ input[type="submit"] {
   color: #fff;
   margin-top: 10px;
   padding: 6px 12px;
-  text-shadow: 1px 1px 2px #666;
+  text-shadow: 1px 1px 1px #666;
 }
 button:hover,
 input[type="submit"]:hover {
@@ -98,6 +100,7 @@ input[type="submit"]:active {
   font-family: 'Sacramento', 'Georgia', serif;
   line-height: 40px;
   padding-top: 10px;
+  text-shadow: 1px 1px 1px #900;
 }
 
 body.index .title {
@@ -109,6 +112,7 @@ body.index .title {
 
 .form-box {
   background: #fff;
+  border: 1px solid #900;
   border-radius: 15px;
   display: block;
   margin: 50px auto;
@@ -193,7 +197,7 @@ nav ul {
   margin-left: 20px;
 }
   #user img {
-    border: 1px solid #333;
+    border: 1px solid #222;
     margin-right: 6px;
     vertical-align: middle;
   }
@@ -217,6 +221,45 @@ nav ul {
   padding: 20px;
 }
 
+/* Home (Profile) */
+#profile-left {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+  #profile-left img {
+    border: 1px solid #222;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #user-name {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  #user-email {
+    font-size: 1.1em;
+  }
+
+#profile-right {
+  float: left;
+  padding-left: 20px;
+  width: 75%;
+}
+  #activity {
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+  }
+    #activity li {
+      margin-bottom: 1em;
+    }
+    #activity .date {
+      display: inline-block;
+      font-size: 0.8em;
+      width: 175px;
+    }
+
+/* Survey */
 p.question {
   font-style: italic;
   margin-bottom: 0.5em;
