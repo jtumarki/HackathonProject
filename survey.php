@@ -2,8 +2,10 @@
 <?php include 'layout/header.php' ?>
 <!-- BEGIN PAGE CONTENT -->
 
-<form action="">
-  <p>I see myself as someone who ...</p>
+<form action="surveysubmit.php" method="post">
+  <h1>Personality Questionnaire</h1>
+  
+  <p>I see myself as someone who...</p>
   
   <p class="question">...is talkative</p>
   <input type="radio" name="ptype1" value="1" /> 1 Strongly Agree<br />
@@ -76,11 +78,12 @@
   <input type="radio" name="ptype10" value="4" /> 4<br />
   <input type="radio" name="ptype10" value="5" /> 5 Strongly Disagree<br />
   
-  <br />
-  <p>List your interests, separated by commas.</p>
-  <textarea name="interests" rows="5" cols="50" placeholder="Example: music, violin, Ellie Goulding"></textarea>
+  <h1>Interests</h1>
   
-  <p><input type="submit" value="Submit" /></p>
+  <p>List your interests, separated by commas.</p>
+  <textarea name="interests" rows="5" cols="50" placeholder="Example: music, club soccer, Ryan Gosling"></textarea>
+  
+  <p><input type="submit" name="submit" value="Submit" /></p>
 </form>
 
 <!-- END PAGE CONTENT -->

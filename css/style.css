@@ -4,8 +4,8 @@
   
 body {
   background: #fff;
-  color: #333;
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  color: #222;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 1em;
 }
 body.index {
@@ -16,7 +16,6 @@ div, form,
 input[type="text"], 
 input[type="password"] {
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
@@ -29,16 +28,19 @@ a:not(.title), a:not(.title):visited {
 }
 a:not(.title):hover {
   color: #aeb37e;
+  text-decoration: underline;
 }
 a:not(.title):active {
-  text-decoration: underline;
+  color: #cfd3a7;
 }
 
 h1 {
   color: #666;
   font-size: 1.2em;
-  margin: 0;
-  margin-bottom: 1em;
+  margin: 1.5em 0 1em 0;
+}
+h1:first-child {
+  margin-top: 0;
 }
 
 p {
@@ -52,9 +54,25 @@ input[type="text"],
 input[type="password"] {
   padding: 5px;
 }
+button,
 input[type="submit"] {
+  background-color: #aeb37e;
+  background: -webkit-linear-gradient(top, #aeb37e, #81835c);
+  border: 1px solid #81835c;
+  border-radius: 4px;
+  color: #fff;
   margin-top: 10px;
-  padding: 5px 8px;
+  padding: 6px 12px;
+  text-shadow: 1px 1px 1px #666;
+}
+button:hover,
+input[type="submit"]:hover {
+  background: -webkit-linear-gradient(top, #cfd3a7, #aeb37e);
+}
+button:active,
+input[type="submit"]:active {
+  background: #81835c;
+  box-shadow: inset 0px 2px 5px #666;
 }
 
 /* Clearfix from HTML5 Boiler Plate
@@ -79,12 +97,14 @@ input[type="submit"] {
 
 .title {
   color: #fff;
-  font-family: 'Georgia', serif;
-  line-height: 50px;
+  font-family: 'Sacramento', 'Georgia', serif;
+  line-height: 40px;
+  padding-top: 10px;
+  text-shadow: 1px 1px 1px #900;
 }
 
 body.index .title {
-  font-size: 2.2em;
+  font-size: 2.5em;
   line-height: normal;
   margin: 15% auto 0 auto;
   width: 350px;
@@ -92,6 +112,7 @@ body.index .title {
 
 .form-box {
   background: #fff;
+  border: 1px solid #900;
   border-radius: 15px;
   display: block;
   margin: 50px auto;
@@ -99,7 +120,7 @@ body.index .title {
 }
 
 #login-form {
-  margin-top: 15px;
+  margin-top: -5px;
   width: 350px;
 }
   #login-form input[type="text"], 
@@ -108,19 +129,22 @@ body.index .title {
     margin-bottom: 15px;
     width: 100%;
   }
+  #login-form input[type="submit"] {
+    margin-right: 3px;
+  }
 
 #register-form {
   width: 450px;
 }
   #register-form label {
     display: inline-block;
-    margin-bottom: 15px;
-    width: 40%;
+    width: 36%;
   }
   #register-form input[type="text"],
   #register-form input[type="password"],
   #register-form select {
-    width: 57%;
+    margin-bottom: 10px;
+    width: 63%;
   }
 
 /*========================================
@@ -129,6 +153,7 @@ body.index .title {
 
 header {
   background: #bd4a57;
+  border-bottom: 1px solid #900;
   height: 50px;
   padding: 0 20px;
 }
@@ -136,8 +161,7 @@ header {
 header .title {
   display: inline-block;
   float: left;
-  font-size: 1.8em;
-  line-height: 50px;
+  font-size: 2em;
 }
 
 nav ul {
@@ -152,15 +176,41 @@ nav ul {
   }
     nav ul li a {
       background: #ddd;
+      border-color: #900;
       border-radius: 8px 8px 0 0;
+      border-style: solid;
+      border-width: 1px 1px 0 1px;
       display: inline-block;
-      line-height: 40px;
-      margin-top: 10px;
+      line-height: 41px;
+      margin-top: 8px;
       padding: 0 20px;
     }
     nav ul li a.current {
       background: #fff;
+      line-height: 42px;
     }
+
+#user {
+  display: inline-block;
+  float: right;
+  line-height: 50px;
+  margin-left: 20px;
+}
+  #user img {
+    border: 1px solid #222;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  #user a {
+    color: #cfd3a7;
+  }
+  #user a:hover {
+    color: #ddd;
+    text-decoration: underline;
+  }
+  #user a:active {
+    color: #fff;
+  }
 
 /*========================================
   MAIN CONTENT
@@ -171,6 +221,45 @@ nav ul {
   padding: 20px;
 }
 
+/* Home (Profile) */
+#profile-left {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+  #profile-left img {
+    border: 1px solid #222;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #user-name {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  #user-email {
+    font-size: 1.1em;
+  }
+
+#profile-right {
+  float: left;
+  padding-left: 20px;
+  width: 75%;
+}
+  #activity {
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+  }
+    #activity li {
+      margin-bottom: 1em;
+    }
+    #activity .date {
+      display: inline-block;
+      font-size: 0.8em;
+      width: 175px;
+    }
+
+/* Survey */
 p.question {
   font-style: italic;
   margin-bottom: 0.5em;
