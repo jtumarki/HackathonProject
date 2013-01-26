@@ -1,5 +1,6 @@
-<?php include 'layout/header.html' ?>
+<?php $thisPage="Home"; ?>
+<?php include 'layout/header.php' ?>
 <!-- BEGIN PAGE CONTENT -->
 
 <!-- END PAGE CONTENT -->
-<?php include 'layout/footer.html' ?>
+<?php include 'layout/footer.php' ?>

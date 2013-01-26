@@ -1,4 +1,5 @@
-<?php include 'layout/header.html' ?>
+<?php $thisPage="Survey"; ?>
+<?php include 'layout/header.php' ?>
 <!-- BEGIN PAGE CONTENT -->
 
 <form action="">
@@ -14,4 +15,4 @@
 </form>
 
 <!-- END PAGE CONTENT -->
-<?php include 'layout/footer.html' ?>
+<?php include 'layout/footer.php' ?>

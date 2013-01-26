@@ -1,0 +1,91 @@
+/*========================================
+  GENERAL STYLES
+  ========================================*/
+  
+body {
+  background: #fff;
+  color: #333;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 1em;
+}
+
+a, a:visited {
+  color: #81835c;
+  text-decoration: none;
+}
+a:hover {
+  color: #aeb37e;
+}
+a:active {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #666;
+  font-size: 1.2em;
+}
+
+/* Clearfix from HTML5 Boiler Plate
+ * Source: http://github.com/h5bp/html5-boilerplate
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/*========================================
+  HEADER
+  ========================================*/
+
+header {
+  background: #bd4a57;
+  height: 50px;
+  padding: 0 20px;
+}
+
+#title {
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-family: 'Georgia', serif;
+  font-size: 1.8em;
+  line-height: 50px;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+  }
+    nav ul li a {
+      background: #ddd;
+      display: inline-block;
+      line-height: 50px;
+      margin: 0;
+      padding: 0 20px;
+    }
+    nav ul li a.current {
+      background: #fff;
+    }
+
+/*========================================
+  MAIN CONTENT
+  ========================================*/
+
+#main-content {
+  clear: both;
+  padding: 15px 20px;
+}
