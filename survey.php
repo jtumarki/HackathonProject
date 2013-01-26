@@ -1,58 +1,80 @@
-<?php $thisPage="Survey"; ?>
-<?php include 'layout/header.php' ?>
+<?php include 'layout/header.html' ?>
 <!-- BEGIN PAGE CONTENT -->
 
 <form action="">
   <p>I see myself as someone who ...</p>
   
-  <p>...is talkative<\p>
+  <p>...is talkative</p>
   <input type="radio" name="ptype1" value="1" /> 1 Strongly Agree<br />
   <input type="radio" name="ptype1" value="2" /> 2<br />
   <input type="radio" name="ptype1" value="3" /> 3<br />
   <input type="radio" name="ptype1" value="4" /> 4<br />
   <input type="radio" name="ptype1" value="5" /> 5 Strongly Disagree<br />
 	  
-  <p> ...Tends to find fault with others <\p>
+  <p> ...Tends to find fault with others </p>
   <input type="radio" name="ptype2" value="1" /> 1 Strongly Agree<br />
   <input type="radio" name="ptype2" value="2" /> 2<br />
   <input type="radio" name="ptype2" value="3" /> 3<br />
   <input type="radio" name="ptype2" value="4" /> 4<br />
   <input type="radio" name="ptype2" value="5" /> 5 Strongly Disagree<br />
   
-    <p>  ...Does a thorough job  <\p>
+    <p>  ...Does a thorough job  </p>
   <input type="radio" name="ptype3" value="1" /> 1 Strongly Agree<br />
   <input type="radio" name="ptype3" value="2" /> 2<br />
   <input type="radio" name="ptype3" value="3" /> 3<br />
   <input type="radio" name="ptype3" value="4" /> 4<br />
   <input type="radio" name="ptype3" value="5" /> 5 Strongly Disagree<br />
   
-      <p>   ...Is reserved  <\p>
+      <p>   ...Is reserved  </p>
   <input type="radio" name="ptype4" value="1" /> 1 Strongly Agree<br />
   <input type="radio" name="ptype4" value="2" /> 2<br />
   <input type="radio" name="ptype4" value="3" /> 3<br />
   <input type="radio" name="ptype4" value="4" /> 4<br />
   <input type="radio" name="ptype4" value="5" /> 5 Strongly Disagree<br />
   
-    <p>    ...Is helpful and unselfish with others  <\p>
+    <p>    ...Is helpful and unselfish with others  </p>
   <input type="radio" name="ptype5" value="1" /> 1 Strongly Agree<br />
   <input type="radio" name="ptype5" value="2" /> 2<br />
   <input type="radio" name="ptype5" value="3" /> 3<br />
   <input type="radio" name="ptype5" value="4" /> 4<br />
   <input type="radio" name="ptype5" value="5" /> 5 Strongly Disagree<br />
   
-      <p>    ...Can be somewhat careless  <\p>
+      <p>    ...Can be somewhat careless  </p>
   <input type="radio" name="ptype6" value="1" /> 1 Strongly Agree<br />
   <input type="radio" name="ptype6" value="2" /> 2<br />
   <input type="radio" name="ptype6" value="3" /> 3<br />
   <input type="radio" name="ptype6" value="4" /> 4<br />
   <input type="radio" name="ptype6" value="5" /> 5 Strongly Disagree<br />
   
-        <p>    ...Can be somewhat careless  <\p>
-  <input type="radio" name="ptype6" value="1" /> 1 Strongly Agree<br />
-  <input type="radio" name="ptype6" value="2" /> 2<br />
-  <input type="radio" name="ptype6" value="3" /> 3<br />
-  <input type="radio" name="ptype6" value="4" /> 4<br />
-  <input type="radio" name="ptype6" value="5" /> 5 Strongly Disagree<br />
+        <p>    ...Is relaxed, handles stress well  </p>
+  <input type="radio" name="ptype7" value="1" /> 1 Strongly Agree<br />
+  <input type="radio" name="ptype7" value="2" /> 2<br />
+  <input type="radio" name="ptype7" value="3" /> 3<br />
+  <input type="radio" name="ptype7" value="4" /> 4<br />
+  <input type="radio" name="ptype7" value="5" /> 5 Strongly Disagree<br />
+  
+          <p>    ...Is full of energy </p>
+  <input type="radio" name="ptype8" value="1" /> 1 Strongly Agree<br />
+  <input type="radio" name="ptype8" value="2" /> 2<br />
+  <input type="radio" name="ptype8" value="3" /> 3<br />
+  <input type="radio" name="ptype8" value="4" /> 4<br />
+  <input type="radio" name="ptype8" value="5" /> 5 Strongly Disagree<br />
+  
+  
+            <p>    ...Is a deep thinker </p>
+  <input type="radio" name="ptype9" value="1" /> 1 Strongly Agree<br />
+  <input type="radio" name="ptype9" value="2" /> 2<br />
+  <input type="radio" name="ptype9" value="3" /> 3<br />
+  <input type="radio" name="ptype9" value="4" /> 4<br />
+  <input type="radio" name="ptype9" value="5" /> 5 Strongly Disagree<br />
+  
+              <p>    ...Tends to be disorganized </p>
+  <input type="radio" name="ptype10" value="1" /> 1 Strongly Agree<br />
+  <input type="radio" name="ptype10" value="2" /> 2<br />
+  <input type="radio" name="ptype10" value="3" /> 3<br />
+  <input type="radio" name="ptype10" value="4" /> 4<br />
+  <input type="radio" name="ptype10" value="5" /> 5 Strongly Disagree<br />
+  
   
   <p>List your interests, separated by commas.</p>
   <textarea name="interests" placeholder="Example: music, violin, Ellie Goulding"></textarea>
@@ -61,4 +83,4 @@
 </form>
 
 <!-- END PAGE CONTENT -->
-<?php include 'layout/footer.php' ?>
+<?php include 'layout/footer.html' ?>
