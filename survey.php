@@ -2,7 +2,7 @@
 <?php include 'layout/header.php' ?>
 <!-- BEGIN PAGE CONTENT -->
 
-<form action="">
+<form action="surveysubmit.php" method="post">
   <p>I see myself as someone who ...</p>
   
   <p class="question">...is talkative</p>
@@ -80,7 +80,7 @@
   <p>List your interests, separated by commas.</p>
   <textarea name="interests" rows="5" cols="50" placeholder="Example: music, violin, Ellie Goulding"></textarea>
   
-  <p><input type="submit" value="Submit" /></p>
+  <p><input type="submit" name="submit" value="Submit" /></p>
 </form>
 
 <!-- END PAGE CONTENT -->

@@ -12,7 +12,7 @@
 		$ptype10_status = 'unchecked';
 
 
-	if (isset($_POST['Submit'])) {
+	if (isset($_POST['submit'])) {
 
 
 		$selected_ptype1 = $_POST['ptype1'];
