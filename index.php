@@ -1,12 +1,22 @@
-<?php $thisPage="Index"; ?>
-<?php include 'layout/header.php' ?>
-<!-- BEGIN PAGE CONTENT -->
-
-<h1>Welcome to SisterMatch!</h1>
-
-<p>This is a paragraph.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ligula vitae felis auctor tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In augue lacus, sodales in euismod ut, elementum a ipsum. Etiam viverra venenatis felis lobortis venenatis. Vestibulum rutrum accumsan ultrices. Maecenas at erat lacinia nisl imperdiet vulputate. Morbi eget justo metus. Cras id lacus nisl, eu dapibus quam. In erat ligula, adipiscing a consectetur eu, sagittis ac erat.</p>
-
-<!-- END PAGE CONTENT -->
-<?php include 'layout/footer.php' ?>
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width">
+  	<title>SisterMatch</title>	
+  	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+  	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+  </head>
+  <body class="index">
+    
+    <form id="login-form">
+      <input type="text" name="username" placeholder="Username" />
+      <input type="password" name="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      
+      <br /><br /><a href="home.php">Click here to skip logging in</a>
+    </form>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  </body>
+</html>

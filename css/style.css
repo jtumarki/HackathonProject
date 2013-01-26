@@ -8,6 +8,9 @@ body {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 1em;
 }
+body.index {
+  background: #bd4a57;
+}
 
 a, a:visited {
   color: #81835c;
@@ -39,6 +42,25 @@ h1 {
 }
 .clearfix {
   *zoom: 1;
+}
+
+/*========================================
+  LOGIN FORM
+  ========================================*/
+
+#login-form {
+  background: #fff;
+  border-radius: 15px;
+  display: block;
+  margin: 15% auto 0 auto;
+  padding: 30px;
+  width: 300px;
+}
+#login-form input[type="text"], 
+#login-form input[type="password"] {
+  display: block;
+  margin-bottom: 15px;
+  width: 98%;
 }
 
 /*========================================
